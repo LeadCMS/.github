@@ -88,4 +88,4 @@ Ready to automate your SaaS sales and content management?
 ---
 
 © 2025 LeadCMS. All rights reserved.  
-[Terms](https://leadcms.io/terms) | [Privacy](https://leadcms.io/privacy) | [GitHub](https://github.com/LeadCMS)
+[Terms](https://leadcms.ai/terms) | [Privacy](https://leadcms.ai/privacy) | [GitHub](https://github.com/LeadCMS)
