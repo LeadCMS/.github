@@ -10,16 +10,19 @@ Create a personal portfolio website that showcases your skills and projects, int
 
 ### Core Functionality
 1. **LeadCMS Integration**
-   - Install and run LeadCMS locally ([Docker Compose Guide](https://github.com/LeadCMS/leadcms.core/blob/develop/docker-compose/README.md)).
-   - Fetch and display personal information from LeadCMS (e.g., home.mdx content)
+   - Install and run LeadCMS locally ([Docker Compose Guide](https://github.com/LeadCMS/leadcms.core/blob/develop/docker-compose/README.md))
+   - Design and configure content types within LeadCMS (recommended: MDX format for landing page content, JSON format for project data)
+   - Fetch and display personal information from LeadCMS
    - Display a list of projects with filtering/sorting capabilities
    - Show detailed project pages with all project data (technologies, features, challenges, results, etc.)
    - Handle dynamic content updates from the CMS
    - Add at least three different content types: MDX, JSON, images
+   - Reference the [sample content structure](https://github.com/LeadCMS/leadcms.ai.next/tree/main/.leadcms/content) to see how MDX and JSON data appears when pulled from the CMS
+   - Note: It's acceptable to commit the dynamic content pulled from LeadCMS to your repository for change tracking purposes
 
 2. **Essential Pages**
-   - **Homepage**: Personal introduction, skills showcase, experience summary, list of completed projects
-   - **Project Detail**: Individual project pages with comprehensive information
+   - **Homepage**: Personal introduction, skills showcase, experience summary, list of completed projects (content managed through LeadCMS using MDX format)
+   - **Project Detail**: Individual project pages with comprehensive information (content managed through LeadCMS using JSON format)
 
 3. **Responsive Design**
    - Mobile-first approach
@@ -33,12 +36,46 @@ Create a personal portfolio website that showcases your skills and projects, int
 ### Technical Requirements
 
 - Connect to LeadCMS API to fetch:
-  - Personal information (from home.mdx content)
-  - Project listings (from projects)
+  - Personal information (using MDX content type for rich formatting)
+  - Project listings (using JSON content type for structured data)
   - Dynamic content updates
 - Display MDX, JSON, and image content on the site
 - Use RESTful API calls to fetch content
-- Reference the provided test site for integration examples (if available)
+- Design appropriate content types within LeadCMS for your portfolio needs
+- Reference the [sample content structure](https://github.com/LeadCMS/leadcms.ai.next/tree/main/.leadcms/content) to understand how pulled content is organized
+
+### Integration Examples
+
+To help you get started with LeadCMS integration, here are some practical examples from our existing repositories:
+
+#### 1. **Sample Scripts and NPM Commands**
+See how to set up automated content fetching in your Next.js project: [package.json example](https://github.com/LeadCMS/leadcms.ai.next/blob/main/package.json)
+
+Key scripts that demonstrate LeadCMS integration:
+```json
+"scripts": {
+  "fetch:leadcms": "node ./scripts/fetch-leadcms-content.mjs",
+  "generate:env": "node ./scripts/generate-env-js.mjs",
+  "prebuild": "npm run fetch:leadcms && npm run generate:env",
+  "predev": "npm run prebuild",
+  "prestart": "npm run prebuild",
+  "build": "next build",
+  "dev": "next dev",
+  "start": "next start",
+  "lint": "next lint",
+  "serve": "npx serve out"
+}
+```
+
+#### 2. **Configuration Setup**
+Example environment configuration for LeadCMS: [.env.sample](https://github.com/LeadCMS/leadcms.ai.next/blob/main/.env.sample)
+
+This shows the configuration values needed to connect your application to LeadCMS.
+
+#### 3. **Plugin Development**
+Learn how to develop custom plugins for LeadCMS: [Plugin Integration Guide](https://github.com/LeadCMS/leadcms.core?tab=readme-ov-file#plugin-integration)
+
+This documentation covers extending LeadCMS functionality with custom C# plugins.
 
 ### Technology Recommendations
 
