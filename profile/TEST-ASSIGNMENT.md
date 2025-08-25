@@ -67,6 +67,11 @@ Key scripts that demonstrate LeadCMS integration:
 }
 ```
 
+**Live Content Updates**: For development mode and live preview, you can use the [SSE watcher script](https://github.com/LeadCMS/leadcms.ai.next/blob/main/scripts/sse-watcher.mjs) to subscribe to live updates from the CMS:
+```bash
+node scripts/sse-watcher.mjs & npm run dev
+```
+
 #### 2. **Configuration Setup**
 Example environment configuration for LeadCMS: [.env.sample](https://github.com/LeadCMS/leadcms.ai.next/blob/main/.env.sample)
 
