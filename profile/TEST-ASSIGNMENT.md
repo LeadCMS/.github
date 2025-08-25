@@ -12,13 +12,14 @@ Create a personal portfolio website that showcases your skills and projects, int
 1. **LeadCMS Integration**
    - Install and run LeadCMS locally ([Docker Compose Guide](https://github.com/LeadCMS/leadcms.core/blob/develop/docker-compose/README.md))
    - Design and configure content types within LeadCMS (recommended: MDX format for landing page content, JSON format for project data)
+   - Explore the [main LeadCMS repository](https://github.com/LeadCMS/leadcms.core) for additional documentation and examples
    - Fetch and display personal information from LeadCMS
    - Display a list of projects with filtering/sorting capabilities
    - Show detailed project pages with all project data (technologies, features, challenges, results, etc.)
    - Handle dynamic content updates from the CMS
    - Add at least three different content types: MDX, JSON, images
-   - Reference the [sample content structure](https://github.com/LeadCMS/leadcms.ai.next/tree/main/.leadcms/content) to see how MDX and JSON data appears when pulled from the CMS
-   - Note: It's acceptable to commit the dynamic content pulled from LeadCMS to your repository for change tracking purposes
+   - Reference the [sample content structure](https://github.com/LeadCMS/leadcms.ai.next/tree/main/.leadcms/content) for examples of content organization
+   - Note: It's acceptable to commit dynamic content from LeadCMS to your repository for change tracking
 
 2. **Essential Pages**
    - **Homepage**: Personal introduction, skills showcase, experience summary, list of completed projects (content managed through LeadCMS using MDX format)
@@ -35,14 +36,10 @@ Create a personal portfolio website that showcases your skills and projects, int
 
 ### Technical Requirements
 
-- Connect to LeadCMS API to fetch:
-  - Personal information (using MDX content type for rich formatting)
-  - Project listings (using JSON content type for structured data)
-  - Dynamic content updates
-- Display MDX, JSON, and image content on the site
-- Use RESTful API calls to fetch content
-- Design appropriate content types within LeadCMS for your portfolio needs
-- Reference the [sample content structure](https://github.com/LeadCMS/leadcms.ai.next/tree/main/.leadcms/content) to understand how pulled content is organized
+- **API Integration**: Connect to LeadCMS API for dynamic content fetching
+- **Content Types**: Handle MDX (rich formatting), JSON (structured data), and images
+- **Content Management**: Design appropriate content types within LeadCMS for portfolio needs
+- **Reference Guide**: Use the [sample content structure](https://github.com/LeadCMS/leadcms.ai.next/tree/main/.leadcms/content) for content organization examples
 
 ### Integration Examples
 
@@ -88,6 +85,7 @@ This documentation covers extending LeadCMS functionality with custom C# plugins
 - **Frontend**: Next.js 14+ with TypeScript
 - **Styling**: Tailwind CSS
 - **Content**: MDX and JSON for rich content rendering
+- **Additional Resources**: Check our [main repository](https://github.com/LeadCMS/leadcms.core) for more technical documentation
 
 *Note: These are suggestions based on our testing. Feel free to use any modern web framework (React, Vue, Angular, Svelte, etc.) or even vanilla JavaScript if you prefer.*
 
@@ -96,24 +94,19 @@ This documentation covers extending LeadCMS functionality with custom C# plugins
 - Dockerize your Next.js site for easy deployment
 - Implement a custom LeadCMS plugin (in C#) to extend functionality
 - Polish the UI/UX and demonstrate responsive design
-- Deploy your website with SSL and production-ready configuration
+- Deploy your website with SSL and production-ready configuration ([nginx setup guide](https://github.com/LeadCMS/leadcms.nginx) for standalone server deployment)
 
 ## Deliverables
 
-### Submission Options (Choose One)
-1. **GitHub Repository** (Required)
-   - Public repository with complete source code
-   - Clear README with setup instructions
-   - Live demo link if deployed
+### Primary Submission
+**GitHub Repository** (Required)
+- Public repository with complete source code
+- Clear README with setup instructions
+- Live demo link if deployed
 
-2. **Deployed Website** (Bonus Points)
-   - Live website on your own domain
-   - Production-ready deployment
-   - SSL certificate and proper configuration
-
-3. **Zip Package** (Alternative)
-   - Complete source code
-   - Detailed setup and run instructions
+### Optional Enhancements
+- **Deployed Website**: Live website with SSL on your own domain (bonus points) - see [nginx setup guide](https://github.com/LeadCMS/leadcms.nginx) for standalone server deployment
+- **Zip Package**: Alternative delivery method with detailed setup instructions
 
 ### Documentation Requirements
 Include in your README:
