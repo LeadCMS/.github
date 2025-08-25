@@ -120,4 +120,4 @@ If you're passionate about building modern SaaS solutions and want to work with 
 
 **Ready to apply?** Check out our test assignment below and submit your solution to start the process.
 
-Test assignment details are available in [`test-assignment.md`](./test-assignment.md).
+Test assignment details are available in [`TEST-ASSIGNMENT.md`](./TEST-ASSIGNMENT.md).
