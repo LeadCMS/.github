@@ -87,5 +87,37 @@ Ready to automate your SaaS sales and content management?
 
 ---
 
-© 2025 LeadCMS. All rights reserved.  
-[Terms](https://leadcms.ai/terms) | [Privacy](https://leadcms.ai/privacy) | [GitHub](https://github.com/LeadCMS)
+## 🚦 Join Our Team: We're Hiring!
+
+We're looking for talented full-stack developers to join LeadCMS and work on exciting projects for our clients.
+
+**About the Role:**
+
+- Build new solutions based on LeadCMS for SaaS and enterprise clients
+- Focus on frontend development using Next.js
+- Develop custom plugins for LeadCMS in C#
+- Collaborate on project architecture and integrations
+- Work with Docker and PostgreSQL for deployment and data management
+
+**Tech Skills We Value:**
+
+- Strong experience with Next.js and React
+- Solid C#/.NET skills (cross-platform, open source)
+- Familiarity with Docker and containerization
+- Experience with PostgreSQL or other relational databases
+- RESTful API design and integration
+- Git-based workflows and CI/CD
+- Experience with AI-based design tools (e.g., v0.app, Figma AI, etc.)
+- Knowledge of MDX, JSON, and image content types
+- Good communication and teamwork skills
+
+**Bonus Skills:**
+- Experience with plugin development for CMS platforms
+- Familiarity with cloud hosting and DevOps
+- UI/UX design experience
+
+If you're passionate about building modern SaaS solutions and want to work with a developer-first open source platform, we'd love to hear from you!
+
+**Ready to apply?** Check out our test assignment below and submit your solution to start the process.
+
+Test assignment details are available in [`test-assignment.md`](./test-assignment.md).
